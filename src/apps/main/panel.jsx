@@ -29,15 +29,15 @@ const QAZ = () => {
       />
       <CardContent>
         <Typography gutterBottom variant="p" component="div">
-          DK Studio Community
+          AtomGlide Beta
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Телеграм-канал автора: новости о проекте, обновления, посты дня и многое другое ждут тебя — @dkdevelop.
+          AtomGlide 7 Beta for TestMans ID 495793457934
 
         </Typography>
       </CardContent>
       <CardActions>
-<Button size="medium" href="https://t.me/dkdevelop">Открыть Telegram</Button>
+<Button size="medium" href="https://t.me/dkdevelop">Test_button</Button>
       </CardActions>
     </Card>
   );
