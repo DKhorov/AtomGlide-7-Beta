@@ -1,0 +1,90 @@
+.dtf-menu {
+  width: auto;         
+  height: 100vh;
+  overflow-y: auto; // Изменено с scroll на auto
+  padding: 0 20px;      
+  box-sizing: border-box; 
+  scrollbar-width: thin; // Для Firefox
+  scrollbar-color: #282828 #000000; // Для Firefox
+}
+
+/* Стилизация для WebKit */
+.dtf-menu::-webkit-scrollbar {
+  width: 0px;
+}
+
+.dft-button{
+  display: flex;
+  flex-direction: column;
+}
+.dft-menu-container{
+  margin-top: 10px;
+}
+
+.dft-bth{
+    --height: 40px;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    font-size: 14px;
+    height: var(--height);
+    padding-left: 8px;
+    padding-right: 8px;
+
+
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+}
+
+.dft-bth:hover{
+  background-color: rgb(70, 70, 70);
+}
+
+.qazwsx{
+  width: 20px;
+  height: 20px;
+  min-width: 20px; // Добавлено
+  min-height: 20px; // Добавлено
+  flex-shrink: 0; // Добавлено
+  margin: 10px;
+  color: rgb(202, 202, 202);
+}
+.dft-theme{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.dft-theme2{
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom:  6rem; // Увеличиваем нижний отступ
+}
+
+.ft-theme-title{
+  font-family: 'JetBrains Mono';
+  color: rgb(87, 87, 87);
+}
+
+.theme-pos{
+  display: flex;
+  margin-top: 15px;
+  
+}
+.pos-title{
+  margin-left: 10px;
+  margin-top: 6px;
+  font-size: 14px;
+
+}
+.tg-cont{
+  padding: 0 10px 0 10px;
+  background-color: rgb(63, 63, 63);
+  border-radius: 20px;
+  margin-top: 10px;
+
+}
+.tg-title{
+  color: white;
+  text-align: center;
+}

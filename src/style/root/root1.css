@@ -1,0 +1,7 @@
+/* AtomGlide -- DK Stduio Product -- Author Dmitry Khorov ( git DKhorov tg @jpegweb */
+
+.flex-container {
+    display: flex;
+    height: 100vh; /* Занимает всю высоту окна браузера */
+    margin-top: -10px;
+  }

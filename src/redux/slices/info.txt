@@ -1,0 +1,5 @@
+---------- AtomGlide ----------
+- src: /src/redux/slices      -
+- F: 0  Fi:4                  -
+- ID Number: 3500 (Read Dock!)-
+-------------------------------

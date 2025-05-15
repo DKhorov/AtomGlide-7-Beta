@@ -1,0 +1,235 @@
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.post-ad {
+  width: 540px;
+  max-width: 100%;
+  margin: 15px auto;
+  cursor: pointer;
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+.post-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-GHJ {
+  background-color: #00000016;
+  backdrop-filter: blur(5px) saturate(0.5);
+  -webkit-backdrop-filter: blur(5px) saturate(0.5);
+  box-shadow: 0 0 0 1px #ffffff50, 0 0 0 2px #000000ad;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 14px;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.title-GHJ {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-top: 18px;
+  line-height: 1.25;
+  margin-left: 1px;
+  font-weight: bold;
+  word-break: break-word;
+}
+
+.post-description2 {
+  position: relative;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: rgb(186, 186, 186);
+  margin-top: 8px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+
+  &.expanded {
+    max-height: none;
+  }
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  background: rgba(24, 163, 249, 0.1);
+  border: 1px solid rgba(24, 163, 249, 0.3);
+  border-radius: 12px;
+  color: #18a3f9;
+  font-size: 0.65rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(24, 163, 249, 0.2);
+    transform: translateY(-1px);
+  }
+}
+.description-GHJ {
+  position: relative;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  margin-top: 8px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+
+  &.expanded {
+    max-height: none;
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 98%;
+  height: auto;
+  max-height: 400px;
+  margin: 24px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  .img-IKLS {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}
+
+.meta-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 10px 0 0;
+  flex-wrap: wrap;
+}
+
+.tags-GHJ {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+
+  .action-btn {
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+    gap: 4px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(24, 163, 249, 0.15);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgba(24, 163, 249, 0.2);
+      transform: translateY(-1px);
+    }
+
+    span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: rgba(218, 243, 255, 0.95);
+    }
+  }
+}
+
+.delete-dialog {
+  .MuiDialog-paper {
+    background: #0D1116;
+    border: 1px solid #3b424c;
+    color: rgba(218, 243, 255, 0.95);
+    border-radius: 20px;
+  }
+}
+
+.bth-white9 {
+  color: black;
+  background-color: white;
+  font-family: 'SF Pro Text', sans-serif;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-GHJ {
+    margin: 10px;
+    padding: 16px;
+  }
+
+  .title-GHJ {
+    font-size: 1.4rem;
+  }
+
+  .post-description2 {
+    font-size: 0.9rem;
+    max-height: 80px;
+  }
+
+  .img-IKLS {
+    max-height: 280px;
+  }
+
+  .post-actions {
+    gap: 8px;
+
+    .action-btn {
+      padding: 6px 12px;
+
+      span { 
+        font-size: 0.85rem; 
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .post-actions {
+    flex-wrap: wrap;
+
+    .action-btn {
+      flex: 1 1 40%;
+      justify-content: center;
+    }
+  }
+}
