@@ -170,7 +170,7 @@ const Header = () => {
               fontSize: '1rem'
             }}
           >
-            В новую версию AtomGlide 6
+            В новую версию AtomGlide 7
           </Typography>
           <Button 
             variant="contained" 
@@ -213,7 +213,7 @@ const Header = () => {
               sx={{ width: 28, height:28 }}
             />
           </Link>
-          <Link to="/" className="nav-linkr">AtomGlide</Link>
+          <Link to="/" className="nav-linkr">AtomGlide Beta</Link>
         </div>
 
         <div className="header-right">
